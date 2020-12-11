@@ -17,7 +17,6 @@ for i in lst :
         answer = i
 print(answer)
 
-
 # 내가 처음 푼 코드
 # def digit_sum(x) :
 #     answer = 0

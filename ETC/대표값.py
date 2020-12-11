@@ -5,7 +5,7 @@ score = list(map(int,input().split()))
 # ex) round(4.5) = 4  --> 이처럼 경계값에 있을때 짝수인 방향으로 값을 반환한다
 ave = (sum(score)/n) + 0.5
 ave = int(ave)
-near = float("inf") # 무한대의 숫자 저장
+near = float("inf") # 무한대의 숫자 저장, 임의의 큰 수로 대체해도 무방
 # 최솟값 구하는 로직
 for i in range(len(score)) :
     if abs(score[i] - ave) < near :

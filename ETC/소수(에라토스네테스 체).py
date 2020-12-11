@@ -10,6 +10,7 @@ for i in range(2, n+1):
             ch[j]=1
 print(cnt)
 
+
 ## 내가 푼 풀이  --> 효율성이 안 좋음
 
 # n= int(input())
