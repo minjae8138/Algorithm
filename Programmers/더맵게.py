@@ -3,7 +3,6 @@ def solution(scv, K):
     answer = 0 
     heapq.heapify(scv) # 기존의 list를 heap구조에 담기 (자동정렬)
 
-    
     # heappush(heap,item)
     # heap에 item을 추가
     while scv[0] < K: 
