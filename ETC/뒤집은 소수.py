@@ -11,10 +11,9 @@ for i in range(len(lst)) :
     lst[i] = int(str(lst[i])[::-1])
     if eros(lst[i]) :
         print(lst[i],end=" ")
-
 # lst[::-1] --> 유용한 코드이니까 숙지하기
 
-# 함수를 만들어서 뒤집는 방법
+## 함수를 만들어서 뒤집는 방법
 # def reverse(x) :
 #     res = 0
 #     while x > 0 :
