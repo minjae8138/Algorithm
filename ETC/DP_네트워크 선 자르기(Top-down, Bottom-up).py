@@ -1,5 +1,4 @@
 ## DP
-
 ## Bottom-up(점화식)
 n = int(input())
 dp = [0] * (n+1)
