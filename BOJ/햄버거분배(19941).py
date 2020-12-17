@@ -19,6 +19,5 @@ for i in range(1,len(arr)) :
                 lst[i+j] = 1
                 lst[i] = 1
                 cnt += 1
-                break
-            
+                break  
 print(cnt)
