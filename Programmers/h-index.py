@@ -1,6 +1,6 @@
 def solution(citations):
     num = len(citations)
-    while 1>0 :
+    while True :
         cnt = 0
         for i in citations :
             if i >= num :
