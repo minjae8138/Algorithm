@@ -1,6 +1,6 @@
 def solution(files):
     answer = []
-    # 빈 문자열일 때 index error 나기때문에 맨뒤에 공백추가 ex) "F-15"
+    # 빈 문자열일 때 index error 나기때문에 맨뒤에 공백추가  ex) "F-15"
     files = list(map(lambda x : x + " ",files))
     
     # idx는 head와 num이 같을 경우 index순서대로 정렬해야되서 필요
