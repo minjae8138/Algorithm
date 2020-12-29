@@ -5,7 +5,7 @@ def dfs(x) :
             if matrix[x][i] == 1 :
                 dfs(i)
 t = int(input())
-for _ in range(1,t+1) :
+for T in range(1,t+1) :
     v,e = map(int,input().split())
     matrix = [[0] * (v+1) for _ in range(v+1)]
     for _ in range(e) :
@@ -15,6 +15,6 @@ for _ in range(1,t+1) :
     visit = []
     dfs(s)
     if g in visit :
-        print(1)
+        print(f"#{T} 1")
     else :
-        print(0)
+        print(f"#{T} 0")
