@@ -1,7 +1,7 @@
 n = int(input())
-arr = [ str(input()) for i in range(n) ]
+arr = [ input().upper() for i in range(n) ]
 for a in arr :
-    if a.upper() == a[::-1].upper() :
+    if a == a[::-1] :
         print("YES")
     else : print("NO")
     
