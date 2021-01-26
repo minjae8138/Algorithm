@@ -1,3 +1,4 @@
+
 # 다시 풀어서 해결함
 a,b = map(int,input().split())
 arr = list(map(int,input().split()))
