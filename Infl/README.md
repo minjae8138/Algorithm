@@ -4,7 +4,9 @@
 
 - [동전교환]: https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EB%8F%99%EC%A0%84%EA%B5%90%ED%99%98.py	"냅색알고리즘"
 
-  
+- [알리바바와40인의도둑](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94%EC%99%8040%EC%9D%B8%EC%9D%98%EB%8F%84%EB%91%91.py)
+
+- 
 
   
 
