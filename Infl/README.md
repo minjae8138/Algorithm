@@ -1,12 +1,14 @@
 ### 다시 풀어야 하는 문제 리스트
 
-- [수들의합]: "https://github.com/minjae8138/Algorithm/blob/main/Infl/Simulation/%EC%88%98%EB%93%A4%EC%9D%98%ED%95%A9.py"
+- [플로이드와샬_회장뽑기](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%99%80%EC%83%AC_%ED%9A%8C%EC%9E%A5%EB%BD%91%EA%B8%B0.py)
 
-- [동전교환]: https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EB%8F%99%EC%A0%84%EA%B5%90%ED%99%98.py	"냅색알고리즘"
+- [동전교환](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EB%8F%99%EC%A0%84%EA%B5%90%ED%99%98.py)
 
 - [알리바바와40인의도둑](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94%EC%99%8040%EC%9D%B8%EC%9D%98%EB%8F%84%EB%91%91.py)
 
-- 
+- [위상정렬](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC.py)
+
+- [가장높은탑쌓기](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EA%B0%80%EC%9E%A5%EB%86%92%EC%9D%80%ED%83%91%EC%8C%93%EA%B8%B0.py)
 
   
 
@@ -14,4 +16,3 @@
 
 
 
-### 다시 풀어서 성공한 문제 리스트
