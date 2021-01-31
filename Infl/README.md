@@ -10,6 +10,10 @@
 
 - [가장높은탑쌓기](https://github.com/minjae8138/Algorithm/blob/main/Infl/DynamicProgramming/%EA%B0%80%EC%9E%A5%EB%86%92%EC%9D%80%ED%83%91%EC%8C%93%EA%B8%B0.py)
 
+- [곳감](https://github.com/minjae8138/Algorithm/blob/main/Infl/Simulation/%EA%B3%B3%EA%B0%90.py)
+
+  
+  
   
 
 
