@@ -12,6 +12,8 @@
 
 - [곳감](https://github.com/minjae8138/Algorithm/blob/main/Infl/Simulation/%EA%B3%B3%EA%B0%90.py)
 
+- [격자판회문수](https://github.com/minjae8138/Algorithm/blob/main/Infl/Simulation/%EA%B2%A9%EC%9E%90%ED%8C%90%ED%9A%8C%EB%AC%B8%EC%88%98.py)
+
   
   
   
