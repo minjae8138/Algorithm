@@ -16,11 +16,10 @@
 
 - [스도쿠검사](https://github.com/minjae8138/Algorithm/blob/main/Infl/%ED%83%90%EC%83%89%26%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98(Simulation)/%EC%8A%A4%EB%8F%84%EC%BF%A0%EA%B2%80%EC%82%AC.py)
 
-- 
+  
 
   
-  
-  
+
 
 
 
