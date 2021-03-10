@@ -3,6 +3,7 @@
 # ans = need로 하고 일반 pop을 사용하면 ans의 형태유지가 되지 않기 때문에
 # 반드시 deque를 사용해야 한다
 # 왜 deque를 안쓰면 ans 형태가 초기화가 안되는지는 모르겠다..
+# 원인 찾음!
 
 from collections import deque
 
@@ -22,3 +23,23 @@ for t in range(1,n+1) :
 
     print("#{} {}".format(t,answer))
 
+
+# 일반 리스트 접근
+
+need = list(input())
+n = int(input())
+for t in range(1,n+1) :
+    answer = "YES"
+    sub = list(map(str,input()))
+
+    ans = need
+    # for 문 한번 돌면 need까지 pop되어 초기화가 안 됌
+    for x in sub :
+        if x in ans :
+            if x != ans.pop(0) :
+                answer="NO"
+                break
+    if ans :
+        answer="NO"
+
+    print("#{} {}".format(t,answer))
