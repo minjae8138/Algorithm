@@ -25,15 +25,18 @@ for t in range(1,n+1) :
 
 
 # 일반 리스트 접근
+# 해결
 
-need = list(input())
+need = input()
 n = int(input())
 for t in range(1,n+1) :
     answer = "YES"
     sub = list(map(str,input()))
 
-    ans = need
-    # for 문 한번 돌면 need까지 pop되어 초기화가 안 됌
+    ans = list(need)
+    # ans = need 로 하면 need = ans 랑 같은 코드이기에 원본인
+    # need에도 변화가 그대로 적용
+    # 따라서 ans = list(need) 처럼 원본과는 다른 값으로 초기화를 하는 것이 옳음
     for x in sub :
         if x in ans :
             if x != ans.pop(0) :
