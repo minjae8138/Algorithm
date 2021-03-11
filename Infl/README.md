@@ -16,8 +16,14 @@
 
 - [스도쿠검사](https://github.com/minjae8138/Algorithm/blob/main/Infl/%ED%83%90%EC%83%89%26%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98(Simulation)/%EC%8A%A4%EB%8F%84%EC%BF%A0%EA%B2%80%EC%82%AC.py)
 
+- [쇠막대기](https://github.com/minjae8138/Algorithm/blob/main/Infl/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%87%A0%EB%A7%89%EB%8C%80%EA%B8%B0.py)
+
+- [교육과정설계](https://github.com/minjae8138/Algorithm/blob/main/Infl/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95%EC%84%A4%EA%B3%84.py)
+
   
 
+  
+  
   
 
 
