@@ -1,18 +1,30 @@
-N = int(input())  # 탑의 개수
-top_list = list(map(int, input().split()))  # 탑 리스트
-stack = []
-answer = []
+from collections import deque
 
-for i in range(N):
 
-    while stack:
-        if stack[-1][1] > top_list[i]:  # 수신 가능한 상황
-            answer.append(stack[-1][0] + 1)
-            break
-        else:
-            stack.pop()
-    if not stack:  # 스택이 비면 레이저를 수신할 탑이 없다.
-        answer.append(0)
-    stack.append([i, top_list[i]])  # 인덱스, 값
+def bfs(v):
+    count = 0
+    q = deque([[v, count]])
 
-print(" ".join(map(str, answer)))
+    while q:
+        v = q.popleft()
+        e = v[0]
+        count = v[1]
+        if not visited[e]:
+            visited[e] = True
+            if e == K:
+                return count
+            count += 1
+            if (e * 2) <= 100000:
+                q.append([e * 2, count])
+            if (e + 1) <= 100000:
+                q.append([e + 1, count])
+            if (e - 1) >= 0:
+                q.append([e - 1, count])
+
+    return count
+
+
+N, K = map(int, input().split())
+visited = [False] * 100001
+print(bfs(N))
+
