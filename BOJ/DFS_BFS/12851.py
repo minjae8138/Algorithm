@@ -1,3 +1,4 @@
+
 from collections import deque
 
 
@@ -28,3 +29,4 @@ def bfs(v):
 a, b = map(int, input().split())
 visited = [0] * 100001
 print(bfs(a))
+
