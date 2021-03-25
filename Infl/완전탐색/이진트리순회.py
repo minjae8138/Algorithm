@@ -1,24 +1,31 @@
-# n = int(input())
-#
-# answer = []
-# def dfs(n) :
-#     r = n % 2
-#     if n <=1 :
-#         answer.append(r)
-#         for a in answer[::-1]:
-#             print(a, end="")
-#         return
-#
-#     answer.append(r)
-#     # print(r,end="")
-#     n = n//2
-#
-#     return dfs(n)
-#
-# dfs(n)
+# 7이하의 트리(전위, 중위, 후위) -> 출력의 위치만 바꿔주면 된다
 
-n=int(input())
+# 전위순회(깊이우선)
+def dfs(v) :
+    if v > 7 :
+        return
+    else :
+        print(v)
+        dfs(2*v)
+        dfs(2*v+1)
+dfs(1)
 
-print(bin(n)[2:])
+# 중위순회
+def dfs(v) :
+    if v > 7 :
+        return
+    else :
+        dfs(2*v)
+        print(v)
+        dfs(2*v+1)
+dfs(1)
 
-
+# 후위순회(너비우선)
+def dfs(v) :
+    if v > 7 :
+        return
+    else :
+        dfs(2*v)
+        dfs(2*v+1)
+        print(v)
+dfs(1)
