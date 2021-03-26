@@ -1,3 +1,5 @@
+# 처음 푼 풀이 -> 코드가 길어짐
+
 from itertools import combinations
 
 n = int(input())
@@ -29,4 +31,26 @@ for a in answer :
     if a*2 == sum_arr :
         res = "YES"
         break
+print(res)
+
+
+# dfs로 풀어보기 -> 백트래킹을 활용한 효율적 풀이
+
+def dfs(idx,sum_) :
+    global res
+    if sum_ > total//2 :  # cut_edge
+        return
+    if idx == n :
+        if sum_ == total-sum_ :
+            res="YES"
+            return
+    else :
+        dfs(idx+1, sum_+arr[idx])
+        dfs(idx + 1, sum_)
+
+n = int(input())
+arr = list(map(int,input().split()))
+total = sum(arr)
+res = "NO"
+dfs(0,0)
 print(res)
