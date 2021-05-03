@@ -3,7 +3,6 @@ def dfs(l,sum_) :
     if l == n+1 :
         if sum_ > res :
             res = sum_
-
     else :
         if l + pt[l] <= n+1 :
             dfs(l+pt[l],sum_+pv[l])
