@@ -73,3 +73,32 @@ def solution(expression):
 
 
 
+# # 정규식을 활용한 짧은 코드
+# # expression = "50*6-3*2"
+# # expression ="100-200*300-500+20"
+#
+#
+# from itertools import permutations
+# import re
+#
+#
+# def solution(expression):
+#     expressions = set(re.findall("\D", expression))  # expression에 있는 연산자 추출
+#     prior = permutations(expressions)
+#     cand = []
+#
+#     for op_cand in prior:
+#         temp = re.compile("(\D)").split('' + expression)  # 연산자와 숫자 구분
+#         for exp in op_cand:
+#             while exp in temp:  # temp에 해당 연산자가 없을때까지 진행
+#                 idx = temp.index(exp)
+#
+#                 # 해당 연산자 앞뒤로 계산한 것을 중앙에 두고 왼쪽 오른쪽에 있는 값들 붙이기
+#                 temp = temp[:idx - 1] + [str(eval(''.join(temp[idx - 1:idx + 2])))] + temp[idx + 2:]
+#         cand.append(abs(int(temp[0])))
+#     return max(cand)
+#
+# # solution(expression)
+
+
+
