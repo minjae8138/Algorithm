@@ -1,19 +1,15 @@
-def dfs(l, sum_) :
-    global res
+def dfs(l,s) :
     if l == n :
-        if 0<sum_<=s:
-            # print(f'l:{l},sum:{sum_}')
-            res.add(sum_)
-
+        if 0<s<=sum(arr) :
+            ch.add(s)
     else :
         # 더할 때, 뺄 때, 그대로일 때
-        dfs(l+1, sum_ + g[l])
-        dfs(l+1, sum_ - g[l])
-        dfs(l+1, sum_)
+        dfs(l+1,s+arr[l])
+        dfs(l+1,s-arr[l])
+        dfs(l+1,s)
 
 n = int(input())
-g = list(map(int,input().split()))
-s= sum(g)
-res = set() # 리스트보다 빠르게 접근(해쉬방식)
+arr = list(map(int,input().split()))
+ch = set()  # 리스트보다 빠르게 접근(해쉬방식)
 dfs(0,0)
-print(s-len(res))
+print(sum(arr)-len(ch))
