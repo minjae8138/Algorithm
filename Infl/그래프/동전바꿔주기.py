@@ -1,21 +1,21 @@
-def dfs(l,sum_) :
-    global cnt
+def dfs(l,s) :
+    global answer
     if l == k :
-        if sum_ == t :
-            cnt += 1
+        if s == t :
+            answer += 1
     else :
-        for i in range(cn[l]+1) :
-            dfs(l+1,sum_ + cv[l]*i)
-
+        for i in range(cnt[l]+1) :
+            dfs(l+1,s+pay[l]*i)
 
 t = int(input())
 k = int(input())
-cv=list()
-cn=list()
+pay = list()
+cnt = list()
 for _ in range(k) :
-    p,n = map(int,input().split())
-    cv.append(p)
-    cn.append(n)
-cnt = 0
+    a,b = map(int,input().split())
+    pay.append(a)
+    cnt.append(b)
+answer = 0
 dfs(0,0)
-print(cnt)
+print(answer)
+
