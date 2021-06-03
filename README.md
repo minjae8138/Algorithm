@@ -3,6 +3,7 @@
 - backjoon
 - programmers
 - sw expert academy
+- inf
 
 
 
