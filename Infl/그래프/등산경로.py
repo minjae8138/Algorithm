@@ -18,8 +18,8 @@ for i in range(len(ret)):
             large_x, large_y = i, j
 # print(small_x,small_y,large_x,large_y)
 
-ch = [[0] * n for _ in range(n)]
-ch[small_x][small_y] = 1
+# ch = [[0] * n for _ in range(n)]
+# ch[small_x][small_y] = 1
 dx = [0, 1, 0, -1]
 dy = [-1, 0, 1, 0]
 cnt = 0
@@ -27,16 +27,16 @@ cnt = 0
 # dfs
 def dfs(x, y):
     global cnt
-    if ch[large_x][large_y] == 1:
+    if x == large_x and y == large_y:
         cnt += 1
     else:
         for i in range(4):
             ddx = x + dx[i]
             ddy = y + dy[i]
-            if 0 <= ddx < n and 0 <= ddy < n and ret[ddx][ddy] > ret[x][y] and ch[ddx][ddy] == 0:
-                ch[ddx][ddy] = 1
+            if 0 <= ddx < n and 0 <= ddy < n and ret[ddx][ddy] > ret[x][y] :
+                # ch[ddx][ddy] = 1
                 dfs(ddx, ddy)
-                ch[ddx][ddy] = 0        # 뒤로가기
+                # ch[ddx][ddy] = 0        # 뒤로가기
 
 dfs(small_x, small_y)
 print(cnt)
