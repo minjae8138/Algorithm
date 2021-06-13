@@ -28,7 +28,6 @@ for t in range(1,large) :
         for j in range(n) :
             if ret[i][j] <= t :
                 ret[i][j] = 0
-
     cnt = 0
     for i in range(n) :
         for j in range(n) :
