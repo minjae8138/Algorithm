@@ -1,5 +1,5 @@
 # Counter와 most_common 활용법에 대해 알게 되었음
-# Counter로 받고 (A,B) 형식에서 for문을 통해 A,B를 변수로 받는 것이 유용했음(여기선 메뉴와 카운트)
+# Counter로 받고 (A,B) 형식에서 for 문을 통해 A,B를 변수로 받는 것이 유용했음(여기선 메뉴와 카운트)
 
 from itertools import combinations
 from collections import Counter
