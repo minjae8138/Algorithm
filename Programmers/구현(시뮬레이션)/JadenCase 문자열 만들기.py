@@ -13,3 +13,9 @@ def solution(s):
         answer += t
 
     return answer
+
+# 파이썬 내장함수 capitalize()를 활용한 색다른 풀이
+# capitalize() 자체가 문제에서 요구하는 기능과 동일한 기능을 포함하고 있음 -> 공백 기준으로 첫문자는 대문자로, 나머진 소문자로 변환
+
+    def solution(s):
+        return ' '.join([word.capitalize() for word in s.split(" ")])
